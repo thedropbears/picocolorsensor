@@ -6,13 +6,14 @@ author_email = "david@thedropbears.org.au"
 url = "https://github.com/thedropbears/picocolorsensor"
 license = "BSD-3-Clause"
 install_requires = [
-	"wpilib~=2023.1.1",
+	"wpilib<2024,>=2023.2.1",
 ]
 
 [build-system]
 requires = [
-	"robotpy-build<2024.0.0,>=2023.0.0",
-	"wpilib~=2023.1.1",
+	"robotpy-build<2024,>=2023.0.0",
+	"wpilib~=2023.2.1",
+	"wheel",
 ]
 
 [tool.robotpy-build]
